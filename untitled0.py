@@ -49,7 +49,7 @@ model.print_trainable_parameters()
 from peft import get_peft_model_state_dict
 
 lora_params = sum(p.numel() for p in get_peft_model_state_dict(model).values())
-print(f"✅ LoRA adapter trainable parameters: {lora_params:,}")
+print(f"LoRA adapter trainable parameters: {lora_params:,}")
 
 # Training parameter setting
 training_args = TrainingArguments(
