@@ -1,1 +1,17 @@
+1. Change history 1
+accuracy: 0.9448684210526316
+Change:
+    Add:
+    lr_scheduler_type="cosine",  
+    warmup_steps=500
+
+    #r=8, 
+    r=16,
+    #lora_alpha=16, 
+    lora_alpha=32,
+    #target_modules=["query", "value"], 
+    target_modules=["value"], 
+    lora_dropout=0.1, 
+    bias="none", 
+    task_type=TaskType.SEQ_CLS ) 
 
