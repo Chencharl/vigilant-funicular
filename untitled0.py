@@ -51,7 +51,7 @@ from peft import get_peft_model_state_dict
 lora_params = sum(p.numel() for p in get_peft_model_state_dict(model).values())
 print(f"✅ LoRA adapter trainable parameters: {lora_params:,}")
 
-# ✅ 第 6 步：训练参数设置
+# Training parameter setting
 training_args = TrainingArguments(
     output_dir="./results",
     eval_steps=500,
@@ -69,7 +69,7 @@ def compute_metrics(eval_pred):
   preds = np.argmax(logits, axis=1)
   return {"accuracy": accuracy_score(labels, preds)}
 
-# ✅ 第 7 步：训练模型
+# Train model
 trainer = Trainer(
     model=model,
     args=training_args,
@@ -80,22 +80,22 @@ trainer = Trainer(
 
 trainer.train()
 
-# ✅ 第 8 步：评估模型
+# Evaluation model
 eval_results = trainer.evaluate()
 print("Final Evaluation Accuracy:", eval_results["eval_accuracy"])
 
-# ✅ 加载测试集
+# Load test set
 with open("/content/test_unlabelled.pkl", "rb") as f: test_dataset = pickle.load(f)
-# ✅ 转为 HuggingFace Dataset 格式
+# Convert the format to the HuggingFace Dataset
 test_dataset = Dataset.from_dict({"text": test_dataset["text"]})
-# ✅ Tokenize 测试集
+# Tokenize test data
 def preprocess_function(examples):
   return tokenizer(examples["text"], truncation=True, padding="max_length", max_length=128)
 
 tokenized_test_dataset = test_dataset.map(preprocess_function, batched=True)
 tokenized_test_dataset.set_format(type="torch", columns=["input_ids", "attention_mask"])
 
-# ✅ 批量预测
+# Batch forecasting
 from torch.utils.data import DataLoader
 test_dataloader = DataLoader(tokenized_test_dataset, batch_size=64)
 model.eval()
@@ -108,7 +108,7 @@ with torch.no_grad():
     preds = torch.argmax(outputs.logits, dim=-1)
     all_predictions.extend(preds.cpu().numpy())
 
-# ✅ 保存预测结果为 submission.csv
+# submission.csv
 df = pd.DataFrame({
   "ID": list(range(len(all_predictions))),
   "label": all_predictions })
