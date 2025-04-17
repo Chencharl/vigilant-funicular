@@ -1,5 +1,6 @@
 1. Change history 1
 accuracy: 0.9448684210526316
+trainable parameters: 888,580
 Change:
     Add:
     lr_scheduler_type="cosine",  
