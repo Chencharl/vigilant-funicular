@@ -16,7 +16,7 @@ Change:
     task_type=TaskType.SEQ_CLS ) 
 
 2. Change history 2  
-accuracy: TBD (training in progress)  
+accuracy: in 2000 data 0.89650
 Change:  
     Add:  
     Per-layer LoRA injection strategy with dual-stage configuration  
