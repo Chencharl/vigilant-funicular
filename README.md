@@ -60,6 +60,15 @@ All experiments were conducted on Google Colab Pro with Tesla T4 GPU (16GB RAM).
 
 ---
 
+## 📃 Reference 
+Hu, E. J.; Shen, Y.; Wallis, P.; Allen-Zhu, Z.; Li, Y.; Wang,S.; and Chen, W. 2021. Lora: Low-rank adaptation of large
+language models. arXiv preprint arXiv:2106.09685.
+
+Loshchilov, I., and Hutter, F. 2016. Sgdr: Stochastic gradient descent with warm restarts. arXiv preprint
+arXiv:1608.03983.
+
+---
+
 ## 📃 Files
 README: Summarizes the approach, experiments, and results for this project.\
 main.ipynb: Contains the final version of the model with the best performance. Run this file to reproduce the results.
