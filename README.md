@@ -74,6 +74,7 @@ README: Summarizes the approach, experiments, and results for this project.\
 code_file.py: Full script of our final model, including dataset loading, LoRA model setup, training via HuggingFace Trainer, evaluation, and test prediction. Outputs include final accuracy and a CSV for submission.\
 Project2.ipynb: Contains the final version of the model with the best performance. Run this file to reproduce the results.
 
+To run: `python code_file.py` in Colab or a local Python environment with required packages.
 ---
 
 ## ✨Contributors
