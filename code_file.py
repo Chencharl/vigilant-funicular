@@ -1,3 +1,6 @@
+# Final version for Project 2: LoRA on RoBERTa for AGNews classification
+# Run this script end-to-end to reproduce training and submission output.
+
 # -*- coding: utf-8 -*-
 """Untitled0.ipynb
 
