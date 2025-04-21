@@ -25,7 +25,7 @@ We iteratively optimized a RoBERTa-base model with Low-Rank Adaptation (LoRA), a
 
 Key strategies:
 
-⚡️ LoRA Injection: Applied only to "query" and "value" projections across all transformer layers.
+⚡️ LoRA Injection: Applied "query" and "value" projections across all transformer layers.
 
 ⚡️ Manual Training Loop: Replaced Trainer.train() with a custom training loop to record per-step train and evaluation loss/accuracy.
 
