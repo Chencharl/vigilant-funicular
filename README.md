@@ -1,8 +1,8 @@
 # Deep Learning - AG News Classification with LoRA
 ## 🚀 Project Overview
 
-This project is a competition from Kaggle, we used the RoBERTa-base model with Low-Rank Adaptation (LoRA) on the AG News dataset. 
-The goal is to achieve a classification accuracy of over 80% on the test set while keeping trainable parameters under 1 million.
+This project is a competition from Kaggle, we used the RoBERTa-base model with Low-Rank Adaptation (LoRA) on the AG News dataset. \
+The goal is to achieve a classification accuracy of over 80% on the test set while keeping trainable parameters under 1 million.\
 The model is trained using PyTorch and the HuggingFace Trainer API, incorporating LoRA adapters, AdamW optimizer, and optional learning rate scheduling for efficient fine-tuning.
 
 ---
@@ -61,7 +61,7 @@ All experiments were conducted on Google Colab Pro with Tesla T4 GPU (16GB RAM).
 ---
 
 ## 📃 Files
-README: Summarizes the approach, experiments, and results for this project.
+README: Summarizes the approach, experiments, and results for this project.\
 main.ipynb: Final version
 
 ---
