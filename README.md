@@ -35,6 +35,8 @@ Key strategies:
 
 ⚡️ Parameter-Constrained Setup: Final version disabled label smoothing, early stopping, and mixed-precision training to stay within parameter limits.
 
+---
+
 ## 🔧 LoRA Configuration Experiments
 We performed multiple rounds of LoRA configuration search and training experiments, summarized below:
 
@@ -45,6 +47,8 @@ We performed multiple rounds of LoRA configuration search and training experimen
 | R3    | `r=8`, α=16, `query+value`                  | none    | None      | 888,580   | 94.42%   |
 | ✅ R4 | `r=8`, α=16, `query+value`                  | all     | None      | 992,268   | **94.6%** |
 
+---
+
 ## 📈 Training Analysis
 Plotted training and validation loss every 500 steps
 
@@ -54,9 +58,13 @@ Visualized confusion matrix and per-class performance
 
 All experiments were conducted on Google Colab Pro with Tesla T4 GPU (16GB RAM).
 
+---
+
 ## 📃 Files
 README: Summarizes the approach, experiments, and results for this project.
 main.ipynb: Final version
+
+---
 
 ## ✨Contributors
 Jiale Cai jc12423@nyu.edu
