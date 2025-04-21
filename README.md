@@ -69,7 +69,7 @@ arXiv:1608.03983.
 README: Summarizes the approach, experiments, and results for this project.\
 code_file.py: Full script with dataset loading, LoRA model setup, training, evaluation, and test prediction. Outputs final accuracy and a CSV file for submission.\
 Project2.ipynb: Contains the final version of the model with the best performance. Due to file size, download and run this file to reproduce the results.
-
+Modification_Record.txt: Brief log of key changes during model development.
 
 
 To run: `python code_file.py` in Colab or a local Python environment with required packages.
