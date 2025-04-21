@@ -62,7 +62,7 @@ All experiments were conducted on Google Colab Pro with Tesla T4 GPU (16GB RAM).
 
 ## 📃 Files
 README: Summarizes the approach, experiments, and results for this project.\
-main.ipynb: Final version
+main.ipynb: Contains the final version of the model with the best performance. Run this file to reproduce the results.
 
 ---
 
