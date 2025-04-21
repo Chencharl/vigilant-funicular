@@ -39,7 +39,7 @@ lora_config = LoraConfig(
     lora_alpha=16,
     target_modules=["query", "value"],
     lora_dropout=0.1,
-    bias="none",
+    bias="all",
     task_type=TaskType.SEQ_CLS )
 
 model = get_peft_model(model, lora_config)
