@@ -27,7 +27,7 @@ Key strategies:
 
 ⚡️ LoRA Injection: Applied "query" and "value" projections across all transformer layers.
 
-⚡️ Manual Training Loop: Replaced Trainer.train() with a custom training loop to record per-step train and evaluation loss/accuracy.
+⚡️ Trainer API-Based Training: Used HuggingFace Trainer with custom logging to monitor loss and accuracy every 500 steps.
 
 ⚡️ Cosine Learning Rate Scheduler: Used in some configurations with 500 warmup steps to stabilize early training.
 
@@ -50,11 +50,7 @@ We performed multiple rounds of LoRA configuration search and training experimen
 ---
 
 ## 📈 Training Analysis
-Plotted training and validation loss every 500 steps
-
-Logged validation accuracy curve
-
-Visualized confusion matrix and per-class performance
+All plots, including training/validation loss curves, per-class metrics, and confusion matrix, can be found in report.
 
 All experiments were conducted on Google Colab Pro with Tesla T4 GPU (16GB RAM).
 
