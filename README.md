@@ -42,9 +42,9 @@ We performed multiple rounds of LoRA configuration search and training experimen
 
 | Round | LoRA Config                                | Bias    | Scheduler | Params    | Accuracy |
 |-------|---------------------------------------------|---------|-----------|-----------|----------|
-| R1    | `r=8/16`, α=`16/32`, `value/query+value`    | none    | None      | 962,308   | 89.65%   |
-| R2    | `r=16`, α=32, `value` only                  | none    | cosine    | 888,580   | 94.49%   |
-| R3    | `r=8`, α=16, `query+value`                  | none    | None      | 888,580   | 94.42%   |
+| R1    | `r=8/16`, α=`16/32`, `value/query+value`    | none    | None      | 962,308   | 89.7%   |
+| R2    | `r=16`, α=32, `value` only                  | none    | cosine    | 888,580   | 94.5%   |
+| R3    | `r=8`, α=16, `query+value`                  | none    | None      | 888,580   | 94.4%   |
 | ✅ R4 | `r=8`, α=16, `query+value`                  | all     | None      | 992,268   | **94.6%** |
 
 ---
