@@ -9,7 +9,7 @@ The model is trained using PyTorch and the HuggingFace Trainer API, incorporatin
 
 ## 📊 Dataset
 
-We used the **AG News** dataset via HuggingFace Datasets. It contains 120,000 training samples and 7,600 test samples, evenly distributed across 4 classes:
+We used the AG News dataset via HuggingFace Datasets. It contains 120,000 training samples and 7,600 test samples, evenly distributed across 4 classes:
 - World
 - Sports
 - Business
